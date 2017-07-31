@@ -16,7 +16,6 @@ document.getElementById("set-color").addEventListener('keypress', function(e){
 });
 
 function changeColor(color, element){
-  debugger;
   element.css('background-color', color);
 }
 function addDivs(){
@@ -24,9 +23,8 @@ function addDivs(){
     var $div = $("<div>");
     $div.attr("class","brush");
     $div.bind('click', function() {
-      debugger;
 
-      changeColor("green",$(this));
+      changeColor($colorInput.val(),$(this));
     });
     $("body").append( $div );
   }
