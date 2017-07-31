@@ -21,8 +21,8 @@ function changeColor(color, element){
 function addDivs(){
   for (var i = 0; i < 20; i++) {
     var $div = $("<div>");
-    $div.attr("class","brush");
-    $div.bind('click', function() {
+    $div.attr("class","square");
+    $div.bind('mouseover', function() {
 
       changeColor($colorInput.val(),$(this));
     });
